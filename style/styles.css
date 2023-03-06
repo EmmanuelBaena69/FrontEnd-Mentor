@@ -153,20 +153,17 @@ body{
     );
 }
 
-@media screen and (max-width:650px){
-    body{
-        align-items: flex-start;
-        background-color: red;
+@media screen and (max-width: 650px) {
+    body {
+      align-items: flex-start;
+      background-color: white;
     }
-    .card{
-        box-shadow: none;
+    .card {box-shadow: none;}
+    .card-container {flex-direction: column;}
+    .result {
+      border-radius: 0 0 1rem 1rem;
+      width: 100%;
     }
-
-    .card-container{flex-direction: column;}
-
-    .result{width: 100%;border-radius: 0 0 1rem 1rem;}
-
-    .result .info{width: 250px;}
-
-    .summary{width: 100px;}
-}
+    .result .info {width: 250px;}
+    .summary {width: 100%;}
+  }
